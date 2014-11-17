@@ -1,0 +1,14 @@
+<h1>This is my color page</h1>
+<p>Can you figure out what my favorite color is?</p>
+
+<body bgcolor = <%= @color %>>
+<p>My favorite color is <%= @color %> and my show size is <%= @size %> 
+<br>	
+<% if @size.to_i > 12 %>
+<%= "Your feet are huge!" %>
+<% else %>
+<%= "Your feet are normal sized, I guess" %>
+<% end %>
+</p>
+
+</body>

@@ -1,0 +1,18 @@
+<h1>Lizzy Travels</h1>
+<p>Welcome to Lizzy's boss website. It will include lots of stuff about my travels.</p>
+
+<%= @homeland %>
+<br>
+<ul>
+<% @countries.each do |country| %>
+	<li><%= country %></li>
+<% end %>
+</ul>
+
+<br>
+
+<br>	
+<% @images.each do |image| %>
+	<%= image_tag image, width: "47%", height: "400px" %>
+<% end %>
+

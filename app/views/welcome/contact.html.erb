@@ -1,0 +1,26 @@
+<h1>This is my Contact page</h1>
+<p>WELCOME!!</p>
+
+<p>
+ <table style="width:100%">
+  <tr>
+  	<% @united_states.each do |key, value| %>
+    <td><%= key %></td>
+    <%end%>
+  </tr>
+  <tr>
+    <% @united_states.each do |key, value| %>
+    <% if color.kind_of?(Array) == false %>
+    	<td><%=value%></td>
+    	<% else %>
+    	<tdvalue.each do |color|
+    <%= color %></td>
+    <%end%>
+    <%end%>
+  </tr>
+</table> 
+
+
+
+
+</p>	
